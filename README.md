@@ -31,7 +31,7 @@ Responsive design and mobile first approach allow for ease of access across devi
 
 <img src="images/viewports.png">
 
-Here is a working live demonstration: https://mrblach.github.io/fetch-example-api/
+Here is a working live [demonstration](https://mrblach.github.io/fetch-example-api/)
 
 ### Steps To Execute This App
 - Download the entire code
