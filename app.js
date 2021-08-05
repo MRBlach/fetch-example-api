@@ -16,7 +16,35 @@ async function getUsers(e) {
 
   data.forEach(function(dataObject) {
     console.log(dataObject.username)
-    output += `<li class='p-2'>${dataObject.username}</li>`;
+    output += `<li class=''>
+    <table class="table">
+      <tr>
+        <td>
+          <p class="font-weight-bold text-white">Client ID: <span class="font-weight-normal text-dark">${dataObject.id}</span>
+          </p>
+        </td>
+        <td>
+          <p class="font-weight-bold text-white">Name: <span class="font-weight-normal text-dark">${dataObject.name}</span>
+          </p>
+          <p class="font-weight-bold text-white">Phone: <span class="font-weight-normal text-dark">${dataObject.phone}</span>
+        </p>
+        </td>
+        <td>
+          <p class="font-weight-bold text-white">Username: <span class="font-weight-normal text-dark">${dataObject.username}</span>
+          </p>
+          <p class="font-weight-bold text-white">Company: <span class="font-weight-normal text-dark">${dataObject.company.name}</span>
+          </p>
+        </td> 
+        <td>
+          <p class="font-weight-bold text-white">Email: <span class="font-weight-normal text-dark">${dataObject.email}</span>
+          </p>
+          <p class="font-weight-bold text-white">Website: <span class="font-weight-normal text-dark">${dataObject.website}</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+    </li>
+                `;
   });
   
   outputData.innerHTML = output;
@@ -33,7 +61,7 @@ async function getComments(e) {
   console.log(data);
 
   const userComments = data.map(function(dataObject) {
-    return dataObject.body;
+    return dataObject;
   });
 
   console.log(userComments);
@@ -41,9 +69,21 @@ async function getComments(e) {
 
   let output = '';
 
-  userComments.forEach(function(comment) {
-    console.log(comment)
-    output += `<li class='p-2'>${comment}</li>`;
+  userComments.forEach(function(dataObject) {
+    console.log(dataObject)
+    output += `<li class=''>
+    <table class="table">
+    <tr>
+      <td>
+        <p class="font-weight-bold text-white">Name: <span class="font-weight-normal text-dark">${dataObject.name}</span>
+        </p>
+        <p class="font-weight-bold text-white">Email: <span class="font-weight-normal text-dark">${dataObject.email}</span>
+        </p>
+        <p class="font-weight-bold text-white">Comment: <span class="font-weight-normal text-dark">${dataObject.body}</span>
+        </p>
+      </td>
+    </tr>
+  </table></li>`;
   });
 
   outputData.innerHTML = output;
