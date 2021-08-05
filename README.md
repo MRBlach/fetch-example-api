@@ -1,5 +1,7 @@
 <h1 align="center">
-API Fetch Examples
+<br>
+<img src="https://i.ibb.co/jRsYFDp/fetchapi.jpg">
+<br>
 </h1> 
 <p align="center">
   <a href="https://saythanks.io/to/melodyblachowicz%40gmail.com">
@@ -20,7 +22,7 @@ API Fetch Examples
 
 <h1 id="introduction">Introduction</h1>
 
-An exercise in how to make fetch requests for different types of data.
+Using JavaScript fetch API to GET data from a public API.
 
 ---
 <h1 id="site">Site</h1>
@@ -29,7 +31,7 @@ An exercise in how to make fetch requests for different types of data.
 
 Responsive design and mobile first approach allow for ease of access across devices.
 
-<img src="images/viewports.png">
+<img src="https://i.ibb.co/6FKZxQW/Untitled.png">
 
 Here is a working live [demonstration](https://mrblach.github.io/fetch-example-api/)
 

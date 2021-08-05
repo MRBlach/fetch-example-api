@@ -99,7 +99,7 @@ async function getComments(e) {
     .then((data) => {
       console.log(data);
       let imageUrl = data.message;
-      outputData.innerHTML = `<img class='mx-auto' src='${imageUrl}' style='display:block; width:100%'>`;
+      outputData.innerHTML = `<img class='mx-auto' src='${imageUrl}' style='display:block; width:50%'>`;
       document.querySelector('.users').hidden = true;
       document.querySelector('.photos').hidden = false;
       document.querySelector('.card').style.marginTop = '25px';
