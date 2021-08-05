@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-<img src="https://i.ibb.co/jRsYFDp/fetchapi.jpg">
+<img src="https://i.ibb.co/jRsYFDp/fetchapi.jpg" width="400px">
 <br>
 </h1> 
 <p align="center">
